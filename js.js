@@ -1,32 +1,26 @@
- // O JavaScript fica aqui
- //PRIMEIRO BOTÃO
-
- function mostrar_numeros(){
-    let para = document.createElement('p');
-    para.textContent = "você clicou no botão";
-    document.body.appendChild(para);
-
-// SEGUNDO BOTÃO , mostrar texto e outros botões
-    function segundo_botao(){
-        let para = document.createElement('p');
-        para.textContent = "você clicou no botão";
-        document.body.appendChild(para);
-
-//TERCEIRO BOTÃO, Mostrar link sonar
-    function criaParagrafo(){
-            let para = document.createElement('p');
-            para.textContent = "você clicou no botão";
-            document.body.appendChild(para);
-
-//QUARTO BOTÃO - Jenkins
-    function criaParagrafo(){
-                let para = document.createElement('p');
-                para.textContent = "você clicou no botão";
-                document.body.appendChild(para);
-
-} 
-
-const botoes = document.querySelectorAll('button')
-for(var i = 0; i< botoes.length; i++){
-    botoes[i].addEventListener('click', criaParagrafo)
-}
+function Numeros() {
+            let contador = 0
+            do {
+                let num = document.createElement('p');
+                num.textContent =  contador + 1;
+                document.body.appendChild(num);
+                contador ++;
+            } while (contador < 10);
+        }
+        
+        function DebitoTecnico() {
+            let info = document.createElement('p');
+                info.textContent = 'O Debito Técnico é um conceito relacionado com a falta de padronização em um código';
+                document.body.appendChild(info);
+        }
+        const botao= document.querySelectorAll('button');
+            for(var y= 0; y < botao.length ; y++) {
+            botao[y].addEventListener('click');
+            }
+    function Sonar() {
+                window.open("https://www.sonarqube.org/")
+                    }
+            function Jenkins() {
+                window.open("https://www.jenkins.io/")
+                    }
+        
